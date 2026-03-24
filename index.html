@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Coding — Professional AI Pair Programming</title>
+  <meta name="description"
+    content="Master Coding — A next-generation AI coding assistant designed by the Google DeepMind team. Build beyond limits." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-trail-container" id="cursorTrailContainer"></div>
+
+
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Master Coding</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how" class="nav-link">How It Works</a></li>
+        <li><a href="#showcase" class="nav-link">Showcase</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#" class="btn-ghost">Sign In</a>
+        <a href="" class="btn-primary">Get Started <span class="btn-arrow">→</span></a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#features">Features</a>
+    <a href="#how">How It Works</a>
+    <a href="#showcase">Showcase</a>
+    <a href="#pricing">Pricing</a>
+    <a href="practice.html" class="btn-primary mobile-btn">Get Started →</a>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Powered by Zoho Corporation Pvt Ltd</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Practice</span>
+        <span class="title-line gradient-text">Master - Coding</span>
+      </h1>
+      <p class="hero-sub">
+        The AI pair programmer that thinks with you — understands your codebase deeply,<br />
+      </p>
+      <div class="hero-actions">
+        <a href="practice.html" class="btn-primary btn-lg magnetic" id="ctaBtn">
+          <span>Start Building Free</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#" class="btn-video magnetic" id="videoBtn">
+          <span class="play-icon">▶</span>
+          <span>Watch Demo</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="120">0</span><span>K+</span>
+          <span class="stat-label">Developers</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="98">0</span><span>%</span>
+          <span class="stat-label">Code Accuracy</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="10">0</span><span>x</span>
+          <span class="stat-label">Faster Shipping</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE ─── -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Next.js</span><span class="sep">✦</span>
+        <span>Python</span><span class="sep">✦</span>
+        <span>Rust</span><span class="sep">✦</span>
+        <span>TypeScript</span><span class="sep">✦</span>
+        <span>React</span><span class="sep">✦</span>
+        <span>Go</span><span class="sep">✦</span>
+        <span>Vue</span><span class="sep">✦</span>
+        <span>Django</span><span class="sep">✦</span>
+        <span>Node.js</span><span class="sep">✦</span>
+        <span>Swift</span><span class="sep">✦</span>
+        <span>Kotlin</span><span class="sep">✦</span>
+        <span>Docker</span><span class="sep">✦</span>
+        <!-- duplicate for seamless loop -->
+        <span>Next.js</span><span class="sep">✦</span>
+        <span>Python</span><span class="sep">✦</span>
+        <span>Rust</span><span class="sep">✦</span>
+        <span>TypeScript</span><span class="sep">✦</span>
+        <span>React</span><span class="sep">✦</span>
+        <span>Go</span><span class="sep">✦</span>
+        <span>Vue</span><span class="sep">✦</span>
+        <span>Django</span><span class="sep">✦</span>
+        <span>Node.js</span><span class="sep">✦</span>
+        <span>Swift</span><span class="sep">✦</span>
+        <span>Kotlin</span><span class="sep">✦</span>
+        <span>Docker</span><span class="sep">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── FEATURES ─── -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="engineering-showcase">
+        <div class="eng-header" data-hover>
+          <span class="eng-tag">The Core Intelligence</span>
+          <h1 class="hero-title">Code at the speed of <span class="gradient-text">thought</span></h1>
+          <p class="hero-subtitle">Master Coding doesn't just predict the next token. It architectures your ideas into
+            reality
+            with deep context and autonomous execution.</p>
+        </div>
+
+        <div class="eng-content">
+          <!-- Left Pillar -->
+          <div class="eng-pillar">
+            <div class="eng-item" data-hover>
+              <div class="eng-num">01</div>
+              <div class="eng-text">
+                <h3>Python : AI & Data Science</h3>
+                <p>Python is the most popular programming language for Artificial Intelligence (AI) and Data Science
+                  because of its simple, English-like syntax and its vast ecosystem of specialized libraries.</p>
+              </div>
+            </div>
+            <div class="eng-item" data-hover>
+              <div class="eng-num">02</div>
+              <div class="eng-text">
+                <h3>JavaScript/TypeScript</h3>
+                <p>While Python dominates the backend of AI, JavaScript (JS) and TypeScript (TS) are the kings of the
+                  Web ecosystem, making them essential for building interactive AI applications and scalable enterprise
+                  software.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Visual -->
+          <div class="eng-center">
+            <div class="eng-orbit">
+              <div class="eng-core">
+                <div class="core-inner">⬡</div>
+                <div class="core-pulse"></div>
+              </div>
+              <div class="orbit-ring ring-1"></div>
+              <div class="orbit-ring ring-2"></div>
+              <div class="orbit-ring ring-3"></div>
+            </div>
+          </div>
+
+          <!-- Right Pillar -->
+          <div class="eng-pillar">
+            <div class="eng-item" data-hover>
+              <div class="eng-num">03</div>
+              <div class="eng-text">
+                <h3>Go : Golang : Cloud & Backend</h3>
+                <p>Go (Golang) is the backbone of modern cloud-native infrastructure. Designed by Google for high
+                  performance and scalability, it has become the standard for building microservices, distributed
+                  systems .</p>
+              </div>
+            </div>
+            <div class="eng-item" data-hover>
+              <div class="eng-num">04</div>
+              <div class="eng-text">
+                <h3>Rust : Systems & Performance</h3>
+                <p>Rust is the "no-compromise" language. It offers the blazing speed of C++ but with a built-in safety
+                  system that prevents the memory crashes and security bugs that haunt older systems languages.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT WORKS ─── -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Process</span>
+        <h2 class="section-title">From prompt to production</h2>
+        <p class="section-sub">Three intelligent steps. Zero friction.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-step="1">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Connect Your Codebase</h3>
+            <p>Install the extension or link your repo. Master Coding ingests your entire project graph in seconds —
+              structure, style, history included.</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step" data-step="2">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Describe Your Intent</h3>
+            <p>Speak naturally. Write a feature spec, paste a bug report, or just describe what you want built.
+              Master Coding decodes intent, not syntax.</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step" data-step="3">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Review & Ship</h3>
+            <p>Get diff-ready, test-covered, documented code. Approve. Merge. Deploy. The whole loop in minutes, not
+              days.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SHOWCASE / CODE WINDOW ─── -->
+  <section class="showcase" id="showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Live Preview</span>
+        <h2 class="section-title">See Master Coding think</h2>
+        <p class="section-sub">Watch it reason, plan, and ship — in real time.</p>
+      </div>
+      <div class="code-window">
+        <div class="code-window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-window-title">mastercoding_agent.py</span>
+          <span class="code-window-badge">● Live</span>
+        </div>
+        <div class="code-body" id="codeBody">
+          <div class="code-line"><span class="code-keyword">import</span> <span class="code-func">mastercoding</span>
+          </div>
+          <div class="code-line code-comment"># Define a new REST endpoint with auth</div>
+          <div class="code-line"><span class="code-keyword">@</span><span class="code-func">app.route</span>(<span
+              class="code-string">"/api/users"</span>, methods=[<span class="code-string">"POST"</span>])</div>
+          <div class="code-line"><span class="code-keyword">async def</span> <span
+              class="code-func">create_user</span>(request: Request):</div>
+          <div class="code-line"> <span class="code-keyword">await</span> auth.verify_token(request.headers)</div>
+          <div class="code-line"> data = <span class="code-keyword">await</span> request.json()</div>
+          <div class="code-line"> user = <span class="code-keyword">await</span> <span
+              class="code-func">UserService</span>.create(**data)</div>
+          <div class="code-line"></div>
+          <div class="code-line code-comment"> # Master Coding: Added validation, error handling &amp; tests ✓</div>
+          <div class="code-line"> <span class="code-keyword">return</span> <span
+              class="code-func">JSONResponse</span>(user.dict(), status_code=<span class="code-num">201</span>)</div>
+          <div class="code-line"></div>
+          <div class="code-line"><span class="code-keyword">class</span> <span class="code-func">UserService</span>:
+          </div>
+          <div class="code-line"> <span class="code-keyword">async def</span> <span
+              class="code-func">create</span>(<span class="code-keyword">cls</span>, **kwargs):</div>
+          <div class="code-line"> validated = UserSchema(**kwargs)</div>
+          <div class="code-line"> <span class="code-keyword">return await</span> db.users.<span
+              class="code-func">insert</span>(validated)</div>
+          <div class="code-typing-cursor"></div>
+        </div>
+      </div>
+      <div class="showcase-pills">
+        <span class="pill active" data-lang="python">Python</span>
+        <span class="pill" data-lang="typescript">TypeScript</span>
+        <span class="pill" data-lang="rust">Rust</span>
+        <span class="pill" data-lang="go">Go</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─── -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Loved By Devs</span>
+        <h2 class="section-title">Shaping the future of coding</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card" data-hover data-glow>
+          <div class="testi-stars">★★★★★</div>
+          <p>"Master Coding shipped a full GraphQL layer for our product in 40 minutes. It understood our domain, our
+            existing patterns, and generated flawless resolvers. Jaw-dropping."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: linear-gradient(135deg,#6c63ff,#a855f7)">B</div>
+            <div>
+              <strong>Balamurugan.B</strong>
+              <span>Full Stack , Team 2 Lead</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card testi-card--featured" data-hover data-glow>
+          <div class="testi-stars">★★★★★</div>
+          <p>"Every engineer on my team moved 3x faster after adopting Master Coding. It's not a copilot, it's a
+            supersonic co-founder."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: linear-gradient(135deg,#06b6d4,#3b82f6)">M</div>
+            <div>
+              <strong>Murugan.N</strong>
+              <span>Digital Marketing</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" data-hover data-glow>
+          <div class="testi-stars">★★★★★</div>
+          <p>"I asked Master Coding to refactor a 10-year-old legacy codebase. It did it safely, with granular diffs,
+            zero
+            breaking changes. Genuinely supernatural."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: linear-gradient(135deg,#f59e0b,#ef4444)">C</div>
+            <div>
+              <strong>Chandru.D</strong>
+              <span>Digital Marketing , Lead</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-cta">
+        <button class="btn-glow-wrap magnetic" id="loadMoreBtn">
+          <span class="btn-glow-inner">Show More Reviews</span>
+          <span class="btn-glow-bg"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRICING ─── -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Investment Packages</span>
+        <h2 class="section-title">Designed for <span class="gradient-text">professionals</span></h2>
+        <p class="section-sub">Simple, transparent, and built to scale with your engineering organization.</p>
+      </div>
+
+      <div class="pricing-matrix">
+        <!-- Developer Plan -->
+        <div class="matrix-card" data-hover>
+          <div class="matrix-header">
+            <h3>Developer</h3>
+            <div class="matrix-price">
+              <span class="m-currency">₹</span>
+              <span class="m-amount">299</span>
+              <span class="m-period">/mo</span>
+            </div>
+            <p>For individuals building the future.</p>
+          </div>
+          <div class="matrix-features">
+            <div class="m-feat">✓ 2k completions / month</div>
+            <div class="m-feat">✓ VS Code & JetBrains</div>
+            <div class="m-feat">✓ Public repo context</div>
+            <div class="m-feat m-no">✗ Private repo context</div>
+            <div class="m-feat m-no">✗ Agentic mode</div>
+          </div>
+          <a href="#" class="btn-ghost btn-block">Start Building Free</a>
+        </div>
+
+        <!-- Professional Plan -->
+        <div class="matrix-card matrix-featured" data-hover data-glow>
+          <div class="matrix-badge">Recommended</div>
+          <div class="matrix-header">
+            <h3>Professional</h3>
+            <div class="matrix-price">
+              <span class="m-currency">₹</span>
+              <span class="m-amount">599</span>
+              <span class="m-period">/mo</span>
+            </div>
+            <p>For engineers who demand the best.</p>
+          </div>
+          <div class="matrix-features">
+            <div class="m-feat">✓ Unlimited completions</div>
+            <div class="m-feat">✓ All IDEs supported</div>
+            <div class="m-feat">✓ Full private repo context</div>
+            <div class="m-feat">✓ Advanced Agentic Mode</div>
+            <div class="m-feat">✓ Priority GPU access</div>
+          </div>
+          <a href="#" class="btn-primary btn-block">Upgrade to Pro</a>
+        </div>
+
+        <!-- Team Plan -->
+        <div class="matrix-card" data-hover>
+          <div class="matrix-header">
+            <h3>Team</h3>
+            <div class="matrix-price">
+              <span class="m-currency">₹</span>
+              <span class="m-amount">1299</span>
+              <span class="m-period">/user</span>
+            </div>
+            <p>For high-velocity engineering teams.</p>
+          </div>
+          <div class="matrix-features">
+            <div class="m-feat">✓ Shared codebase IQ</div>
+            <div class="m-feat">✓ Team-wide style guide</div>
+            <div class="m-feat">✓ Centralized billing</div>
+            <div class="m-feat">✓ Weekly velocity reports</div>
+            <div class="m-feat">✓ 24/7 Priority support</div>
+          </div>
+          <a href="#" class="btn-ghost btn-block">Join Your Team</a>
+        </div>
+      </div>
+
+      <div class="matrix-footer" data-hover>
+        <div class="m-ent-info">
+          <h4>Looking for Enterprise?</h4>
+          <p>Custom security, air-gapped instances, and dedicated infrastructure for large scale organizations.</p>
+        </div>
+        <a href="#" class="btn-primary btn-outline">Schedule a Demo →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA BANNER ─── -->
+  <section class="cta-banner">
+    <div class="cta-glow"></div>
+    <div class="container cta-inner">
+      <h2>Ready to escape gravity?</h2>
+      <p>Join 120,000+ engineers building the impossible.</p>
+      <a href="#" class="btn-primary btn-lg magnetic">Launch Master Coding Free <span class="btn-arrow">→</span></a>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">Master Coding</span>
+        </a>
+        <p>AI pair programming, reimagined.<br />Built by Google DeepMind.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="social-btn" aria-label="GitHub">⌥</a>
+          <a href="#" class="social-btn" aria-label="Discord">◈</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Changelog</a>
+          <a href="#">Roadmap</a>
+        </div>
+        <div class="footer-col">
+          <h4>Developers</h4>
+          <a href="#">Gokul</a>
+          <a href="#">Balamurugan</a>
+          <a href="#">Murugan</a>
+          <a href="#">Chandru</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">Zoho Pvt.Lmt</a>
+          <a href="#">Aakam 360</a>
+          <a href="#">@_Shine</a>
+          <a href="#">Wipro Technologies</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2026 © Master Coding — A Google DeepMind Project. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ─── VIDEO MODAL ─── -->
+  <div class="video-modal" id="videoModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="video-container">
+        <!-- Using a placeholder video URL since I can't generate a video file directly -->
+        <video id="demoVideo" controls preload="metadata">
+          <source src="" type="">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
