@@ -2,12 +2,12 @@
 
 Professional AI Pair Programming Landing Page — *Built beyond limits.*
 
-![Master Coding Preview](https://github.com/gokul-codes-420/Master---Coder/raw/main/preview.png)
+![Master Coding Preview](https://github.com/gokul-codes-420/Master---Coder-Vibe-Coding-/raw/main/preview.png)
 
 ## 🚀 Live Demo
 
 Experience the future of coding here:
-**[https://gokul-codes-420.github.io/Master---Coder/](https://gokul-codes-420.github.io/Master---Coder/)**
+**[https://gokul-codes-420.github.io/Master---Coder-Vibe-Coding-/](https://gokul-codes-420.github.io/Master---Coder-Vibe-Coding-/)**
 
 ## ✨ Features
 
