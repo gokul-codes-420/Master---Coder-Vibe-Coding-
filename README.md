@@ -7,6 +7,10 @@ Professional AI Pair Programming Landing Page — *Built beyond limits.*
 Experience the future of coding here:
 [https://gokul-codes-420.github.io/Master---Coder-Vibe-Coding-/](https://gokul-codes-420.github.io/Master---Coder-Vibe-Coding-/)
 
+
+<img width="2542" height="1216" alt="image" src="https://github.com/user-attachments/assets/9c78bf47-83e3-4651-95ad-520633195f1b" />
+
+
 ## ✨ Features
 
 - **The Core Intelligence**: Architecture your ideas into reality with deep context.
