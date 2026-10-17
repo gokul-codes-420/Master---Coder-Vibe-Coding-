@@ -32,4 +32,4 @@ Experience the future of coding here:
 - **Murugan**
 - **Chandru**
 
-*2026 © Master Coding — A Google DeepMind Project. All rights reserved.*
+*2026 © Master Coding Pro Level — A Google DeepMind Project. All rights reserved.*
